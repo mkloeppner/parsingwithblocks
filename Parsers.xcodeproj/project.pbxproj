@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5075FA2E1FD54CDC9E73A37C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 690A317B765944089037BE1A /* libPods.a */; };
+		2830F5BC193BED2600FF3618 /* NSArray+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = 2830F5BB193BED2600FF3618 /* NSArray+Extras.m */; };
 		5A416035D12EED6804BE84A6 /* SmalltalkLexer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A4163A1FCCB2774952D2954 /* SmalltalkLexer.m */; };
 		5A4165C3C9A2F41CA81845CA /* LexerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A4161187093C5533F9DD2DF /* LexerTests.m */; };
 		5A4169AB408758C289C2781E /* SmalltalkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A416330E9716AF964186703 /* SmalltalkTests.m */; };
@@ -41,7 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0BC51EEC89744B848E014A2B /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		2830F5BA193BED2600FF3618 /* NSArray+Extras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Extras.h"; sourceTree = "<group>"; };
+		2830F5BB193BED2600FF3618 /* NSArray+Extras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Extras.m"; sourceTree = "<group>"; };
 		5A4161187093C5533F9DD2DF /* LexerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LexerTests.m; sourceTree = "<group>"; };
 		5A416330E9716AF964186703 /* SmalltalkTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmalltalkTests.m; sourceTree = "<group>"; };
 		5A4163A1FCCB2774952D2954 /* SmalltalkLexer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmalltalkLexer.m; sourceTree = "<group>"; };
@@ -55,7 +56,6 @@
 		5A416C63F56D082A67B18200 /* Parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Parser.h; sourceTree = "<group>"; };
 		5A416CA86B315EAA2CD6F403 /* Calculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Calculator.m; sourceTree = "<group>"; };
 		5A416D038107F911CDA6B41D /* CalculatorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculatorTests.m; sourceTree = "<group>"; };
-		690A317B765944089037BE1A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		83991326187ECEF10042F7AF /* Parsers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Parsers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83991329187ECEF10042F7AF /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		8399132C187ECEF10042F7AF /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -85,7 +85,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8399132A187ECEF10042F7AF /* Cocoa.framework in Frameworks */,
-				5075FA2E1FD54CDC9E73A37C /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,7 +107,6 @@
 				8399134D187ECEF10042F7AF /* ParsersTests */,
 				83991328187ECEF10042F7AF /* Frameworks */,
 				83991327187ECEF10042F7AF /* Products */,
-				0BC51EEC89744B848E014A2B /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,7 +125,6 @@
 				83991329187ECEF10042F7AF /* Cocoa.framework */,
 				83991348187ECEF10042F7AF /* XCTest.framework */,
 				8399132B187ECEF10042F7AF /* Other Frameworks */,
-				690A317B765944089037BE1A /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -162,6 +159,8 @@
 				5A416839AC7436B21BD2A813 /* SmalltalkLexer.h */,
 				5A416CA86B315EAA2CD6F403 /* Calculator.m */,
 				5A4163F832CCF7387DF38FBD /* Calculator.h */,
+				2830F5BA193BED2600FF3618 /* NSArray+Extras.h */,
+				2830F5BB193BED2600FF3618 /* NSArray+Extras.m */,
 			);
 			path = Parsers;
 			sourceTree = "<group>";
@@ -206,11 +205,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 83991357187ECEF10042F7AF /* Build configuration list for PBXNativeTarget "Parsers" */;
 			buildPhases = (
-				D2A2C94B824F4354A2881445 /* Check Pods Manifest.lock */,
 				83991322187ECEF10042F7AF /* Sources */,
 				83991323187ECEF10042F7AF /* Frameworks */,
 				83991324187ECEF10042F7AF /* Resources */,
-				A3F9EBBB90724D71A5B9C373 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -249,7 +246,7 @@
 				ORGANIZATIONNAME = "Chris Eidhof";
 				TargetAttributes = {
 					83991346187ECEF10042F7AF = {
-						TestTargetID = 83991325187ECEF10042F7AF /* Parsers */;
+						TestTargetID = 83991325187ECEF10042F7AF;
 					};
 				};
 			};
@@ -294,39 +291,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		A3F9EBBB90724D71A5B9C373 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D2A2C94B824F4354A2881445 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		83991322187ECEF10042F7AF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -337,6 +301,7 @@
 				83991336187ECEF10042F7AF /* main.m in Sources */,
 				5A416F3C9BEE219B80BB43E8 /* ConstraintParser.m in Sources */,
 				5A416CBED3253C7E08B79EDF /* Parser.m in Sources */,
+				2830F5BC193BED2600FF3618 /* NSArray+Extras.m in Sources */,
 				5A416ADA36E7BD12A111B711 /* PatternMatchingParser.m in Sources */,
 				5A416E1CC76F22BC535410E5 /* Calculator.m in Sources */,
 			);
@@ -470,7 +435,6 @@
 		};
 		83991358187ECEF10042F7AF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0BC51EEC89744B848E014A2B /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -484,7 +448,6 @@
 		};
 		83991359187ECEF10042F7AF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0BC51EEC89744B848E014A2B /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
